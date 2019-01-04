@@ -1,2 +1,2 @@
 # José Carlos García Alanis, CV
-LaTeX template for academic CV
+This is a repository for my academic CV.
