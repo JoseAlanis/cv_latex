@@ -1,0 +1,120 @@
+---
+name: José C.
+surname: García Alanis
+position: "Clinical Scientist | Data Analyst | Scientific Software Developer | PhD Candidate"
+# address: "Department of Psychology, Philipps-University of Marburg"
+email: "alanis.jcg@gmail.com"
+twitter: JoiAlhaniz
+github: JoseAlanis
+linkedin: jcgalanis
+aboutme: "I'm a clinical and experimental psychologist with an extensive track record in statistical modelling and scientific software development using **Python** (e.g., NumPy, Pandas, SciPy, scikit-learn), **R**, and **Git**. My work lies at the interface between science and clinical practice, bridging design and management of scientific projects with the application of clincal interventions in the field. I'm also an active member of the open source community and an advocate of open, reproducible, and robust scientific practices."
+date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%B %Y')`"
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(here)
+library(dplyr)
+library(glue)
+library(tibble)
+```
+
+```{r get data, include=FALSE}
+# scientific experience 
+jobs <- read.table(here("data", "experience.tsv"), sep="\t", header = T)
+# education
+edu <- read.table(here("data", "education.tsv"), sep="\t", header = T)
+# clinical work
+clin <- read.table(here("data", "clinical.tsv"), sep="\t", header = T)
+# skills
+skills <- read.table(here("data", "skills.tsv"), sep="\t", header = T) %>% 
+  group_by(category) %>% 
+  mutate(skill = paste(skill, collapse = ", ")) %>% 
+  unique
+```
+
+# Scientific experience
+```{r experience}
+jobs %>% 
+  detailed_entries(
+    what = role,
+    when = glue("{start_date}--{end_date}"),
+    with = company,
+    where = where,
+    why = details)
+```
+
+# Education 
+```{r education}
+edu %>% 
+  detailed_entries( 
+    what = degree,
+    when = glue("{start_date}--{end_date}"),
+    where = loc,
+    with = uni,
+    why = details)
+```
+
+# Clinical work
+```{r clinical}
+clin %>%
+  detailed_entries(
+    what = role,
+    when = glue("{start_date}--{end_date}"),
+    where = loc,
+    with = uni,
+    why = details)
+```
+
+\pagebreak
+
+# Skills
+
+```{r skills}
+skills %>% 
+  detailed_entries(what = skill, with = category)
+```
+
+# Workshops
+
+```{r workshops}
+tribble(
+  ~ role, ~ course, ~ organisation, ~ country, ~ dates, ~ details,
+  "Instructor / Organiser", 
+  "Using Multivariate Statistics to Analyse EEG Data", 
+  "Brainhack", 
+  "Global", 
+  "Nov. 2020", 
+  "Virtual event. Researchers from across the globe work together on innovative projects.",
+  
+  "Instructor / Organiser",
+  "Jupyter Nootebooks and Python essential training",
+  "Brainhack Marburg", 
+  "Germany", 
+  "Nov. 2019", 
+  "Hackathon for researchers to collaborate on open science / neuroimaging projects.",
+  
+  "Teaching Assistant", 
+  "Machine Learning for Neuroscientists", 
+  "DZNE", 
+  "Magdeburg, Germany", 
+  "Sep. 2019", 
+  "Training with relevant neuroimaging software packages and tools for machine learning.",
+  
+  "Teaching Assistant", 
+  "Library Carpentry", 
+  "University Library Marburg", 
+  "Germany", 
+  "June 2018", 
+  " Create, analyse, and maintain sustainable data ressources with Python.") %>% 
+  brief_entries(glue("\\textbf{<course>}: <role> (<organisation>, <country>) \\newline <details>", 
+                     .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE)
+```
+
+# Publications
+
+```{r publications}
+bibliography_entries("pubs.bib")
+```
