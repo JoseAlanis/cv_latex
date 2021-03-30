@@ -55,7 +55,7 @@ d3 <- c('Research and Teaching Assistant',
         'Marburg (Germany)',
         'October 2014',
         'September 2019',
-        'Programming of human-computer interfaces, real-time expermental control.')
+        'Programming of human-computer interfaces, real-time experimental control.')
 d4 <- c('Research and Teaching Assistant', 
         'Philipps-Universität Marburg',
         'Marburg (Germany)',
@@ -124,17 +124,23 @@ an3 <- c('Analytics', 'reproducible research')
 pr1 <- c('Programming', 'Python (advanced)')
 pr2 <- c('Programming', 'R (advanced)')
 pr3 <- c('Programming', 'Git (advanced)')
-pr4 <- c('Programming', 'SQL')
+pr4 <- c('Programming', 'MATLAB (advanced)')
+pr5 <- c('Programming', 'SQL')
 
-pk1 <- c('Packages', 'Numpy')
+pk1 <- c('Packages', 'NumPy')
 pk2 <- c('Packages', 'Pandas')
 pk3 <- c('Packages', 'SciPy')
 pk4 <- c('Packages', 'scikit-learn')
 pk5 <- c('Packages', 'tidyverse')
 pk6 <- c('Packages', 'lme4')
 
+lan1 <- c('Languages', 'German')
+lan2 <- c('Languages', 'English')
+lan3 <- c('Languages', 'Spanish')
+
 skills <- data.frame(rbind(an1, an2, an3,
-                           pr1, pr2, pr3, pr4,
-                           pk1, pk2, pk3, pk4, pk5, pk6))
+                           pr1, pr2, pr3, pr4, pr5,
+                           pk1, pk2, pk3, pk4, pk5, pk6,
+                           lan1, lan2, lan3))
 names(skills) <- c('category', 'skill')
 write.table(skills, file = './data/skills.tsv', sep = '\t', row.names = F)

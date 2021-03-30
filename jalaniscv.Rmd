@@ -3,6 +3,7 @@ name: José C.
 surname: García Alanis
 position: "Clinical Scientist | Data Analyst | Scientific Software Developer | PhD Candidate"
 # address: "Department of Psychology, Philipps-University of Marburg"
+profilepic: "./img/me.jpg"
 email: "alanis.jcg@gmail.com"
 twitter: JoiAlhaniz
 github: JoseAlanis
@@ -35,7 +36,9 @@ skills <- read.table(here("data", "skills.tsv"), sep="\t", header = T) %>%
   unique
 ```
 
-# Scientific experience
+# Experience
+
+## Scientific
 ```{r experience}
 jobs %>% 
   detailed_entries(
@@ -46,22 +49,22 @@ jobs %>%
     why = details)
 ```
 
-# Education 
-```{r education}
-edu %>% 
-  detailed_entries( 
-    what = degree,
+## Clinical Work
+```{r clinical}
+clin %>%
+  detailed_entries(
+    what = role,
     when = glue("{start_date}--{end_date}"),
     where = loc,
     with = uni,
     why = details)
 ```
 
-# Clinical work
-```{r clinical}
-clin %>%
-  detailed_entries(
-    what = role,
+# Education 
+```{r education}
+edu %>% 
+  detailed_entries( 
+    what = degree,
     when = glue("{start_date}--{end_date}"),
     where = loc,
     with = uni,
@@ -115,6 +118,12 @@ tribble(
 
 # Publications
 
-```{r publications}
-bibliography_entries("pubs.bib")
-```
+1. Gau, R., Noble, S., Heuer, K., Bottenhorn, K. L., Bilgin, I. P., Yang, Y., … Zuo, X. (2021, February 12). Brainhack: developing a culture of open, inclusive, community-driven neuroscience. https://doi.org/10.31234/osf.io/rytjq
+
+2. **García Alanis, J. C.**, Baker, T. E., Peper, M., & Chavanon, M. L. (2019). Social context effects on error-related brain activity are dependent on interpersonal and achievement-related traits. Scientific reports, 9(1), 1-14. https://doi.org/10.1038/s41598-018-38417-2
+
+3. Vainik, U., Baker, T. E., Dadar, M., Zeighami, Y., Michaud, A., Zhang, Y., ... & Dagher, A. (2018). Neurobehavioral correlates of obesity are largely heritable. Proceedings of the National Academy of Sciences, 115(37), 9312-9317. https://doi.org/10.1073/pnas.1718206115
+
+4. Bahn, D., Vesker, M., **García Alanis, J. C.**, Schwarzer, G., & Kauschke, C. (2017). Age-dependent positivity-bias in children’s processing of emotion terms. Frontiers in psychology, 8, 1268. https://doi.org/10.3389/fpsyg.2017.01268
+
+
