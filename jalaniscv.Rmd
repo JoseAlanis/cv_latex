@@ -1,14 +1,14 @@
 ---
 name: José C.
 surname: García Alanis
-position: "Clinical Scientist | Data Analyst | Scientific Software Developer | PhD Candidate"
+position: "PhD Candidate | Psycholgist | Data Analyst | Scientific Software Developer"
 # address: "Department of Psychology, Philipps-University of Marburg"
-profilepic: "./img/me.jpg"
+# profilepic: "./img/me.jpeg"
 email: "alanis.jcg@gmail.com"
-twitter: JoiAlhaniz
+# twitter: JoiAlhaniz
 github: JoseAlanis
 linkedin: jcgalanis
-aboutme: "I'm a clinical and experimental psychologist with an extensive track record in statistical modelling and scientific software development using **Python** (e.g., NumPy, Pandas, SciPy, scikit-learn), **R**, and **Git**. My work lies at the interface between science and clinical practice, bridging design and management of scientific projects with the application of clincal interventions in the field. I'm also an active member of the open source community and an advocate of open, reproducible, and robust scientific practices."
+aboutme: "Hi! I'm a experimental and clinical psychologist at the Philipps-Universität Marburg. My work lies at the interface between science and clinical practice, bridging basic research with the application of clincal interventions in the field. My research interests are focused on personal and situational influences on human brain function in relation to goal-directed behavior. I have a background in statistical modelling and scientific software development using **Python** (e.g., NumPy, Pandas, SciPy, scikit-learn), **R**, and **Git**.  I'm also an active member of the open source community and an advocate of open, reproducible, and robust scientific practices."
 date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
@@ -110,20 +110,55 @@ tribble(
   "Library Carpentry", 
   "University Library Marburg", 
   "Germany", 
-  "June 2018", 
+  "Jun. 2018", 
   " Create, analyse, and maintain sustainable data ressources with Python.") %>% 
   brief_entries(glue("\\textbf{<course>}: <role> (<organisation>, <country>) \\newline <details>", 
                      .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE)
 ```
 
+# Grants and Awards
+
+```{r Grants}
+tribble(
+  ~ grant, ~ organisation, ~ dates,
+  "Reserach Fellowship (Marburg Model)", 
+  "Philipps-Universität Marburg",
+  "Oct. 2019",
+  
+  "DGPA Best Poster Award", 
+  "44th DGPs/DGPA Tagung Psychologie und Gehirn conference (Gießen, Germany)",
+  "Jun. 2018",
+  
+  "Travel Grant (DAAD-IPID4all)", 
+  "Research Stay at Montreal Neurological Institut (Montreal, CA).",
+  "Jan. 2016",
+  
+  "Travel Grant (DAAD-IPID4all)", 
+  "55th Annual Meeting Society for Psychophysiological Research (Seattle, WA).",
+  "Oct. 2015",
+
+  "DAAD-STIBET",
+  "Degree Completion Grant (Philipps-Universität Marburg)",
+  "Jun. 2013",
+  
+ "DAAD-STIBET",
+ "International Students Engagement Scholarship, Philipps-Universität Marburg.",
+ "Jun. 2011") %>% 
+  brief_entries(glue("\\textbf{<grant>}: <organisation>", 
+                     .open = "<", .close = ">"), paste0(dates, ""), .protect = FALSE)
+```
+
+
 # Publications
 
-1. Gau, R., Noble, S., Heuer, K., Bottenhorn, K. L., Bilgin, I. P., Yang, Y., … Zuo, X. (2021, February 12). Brainhack: developing a culture of open, inclusive, community-driven neuroscience. https://doi.org/10.31234/osf.io/rytjq
+1. Gau, R., Noble, S., Heuer, K., Bottenhorn, K. L., Bilgin, I. P., Yang, Y. F., ... & Marinazzo, D. (2021). Brainhack: Developing a culture of open, inclusive, community-driven neuroscience. *Neuron*. https://doi.org/10.1016/j.neuron.2021.04.001
 
-2. **García Alanis, J. C.**, Baker, T. E., Peper, M., & Chavanon, M. L. (2019). Social context effects on error-related brain activity are dependent on interpersonal and achievement-related traits. Scientific reports, 9(1), 1-14. https://doi.org/10.1038/s41598-018-38417-2
+2. Herholz, P., Vogelbacher, C., & **García Alanis., J. C.** (2020, November). G0RELLA/gorella_overview: initial alpha release (Version v0.0.1-alpha). Zenodo. http://doi.org/10.5281/zenodo.4276460
 
-3. Vainik, U., Baker, T. E., Dadar, M., Zeighami, Y., Michaud, A., Zhang, Y., ... & Dagher, A. (2018). Neurobehavioral correlates of obesity are largely heritable. Proceedings of the National Academy of Sciences, 115(37), 9312-9317. https://doi.org/10.1073/pnas.1718206115
+3. **García Alanis, J. C.**, Baker, T. E., Peper, M., & Chavanon, M. L. (2019). Social context effects on error-related brain activity are dependent on interpersonal and achievement-related traits. *Scientific reports, 9(1)*, 1-14. https://doi.org/10.1038/s41598-018-38417-2
 
-4. Bahn, D., Vesker, M., **García Alanis, J. C.**, Schwarzer, G., & Kauschke, C. (2017). Age-dependent positivity-bias in children’s processing of emotion terms. Frontiers in psychology, 8, 1268. https://doi.org/10.3389/fpsyg.2017.01268
+4. Vainik, U., Baker, T. E., Dadar, M., Zeighami, Y., Michaud, A., Zhang, Y., ... & Dagher, A. (2018). Neurobehavioral correlates of obesity are largely heritable. *Proceedings of the National Academy of Sciences, 115(37)*, 9312-9317. https://doi.org/10.1073/pnas.1718206115
+
+5. Bahn, D., Vesker, M., **García Alanis, J. C.**, Schwarzer, G., & Kauschke, C. (2017). Age-dependent positivity-bias in children’s processing of emotion terms. *Frontiers in psychology, 8*, 1268. https://doi.org/10.3389/fpsyg.2017.01268
 
 

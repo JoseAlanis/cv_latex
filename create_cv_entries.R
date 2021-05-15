@@ -6,15 +6,15 @@
 
 # --- 1) create experience .tsv
 # current
-a1 <- c('Research Fellow', 
-       'Philipps-Universität Marburg',
+a1 <- c('Philipps-Universität Marburg',
+       'Research Fellow',
        'Marburg (Germany)',
        'October 2019',
        'Present',
        'Build robust data cleaning and preprocessing pipelines 
        that work reliably across multiple data sets.')
-a2 <- c('Research Fellow', 
-       'Philipps-Universität Marburg',
+a2 <- c('Philipps-Universität Marburg',
+       'Research Fellow', 
        'Marburg (Germany)',
        'October 2019',
        'Present',
@@ -22,42 +22,42 @@ a2 <- c('Research Fellow',
        for multiple scientific projects.')
 
 # GSoC
-b1 <- c('Google Summer of Code Student Developer', 
-        'Python Software Foundation',
+b1 <- c('Python Software Foundation',
+        'Google Summer of Code Student Developer', 
         'Remote',
         'May 2019',
         'September 2019',
         'Enhance statistical inference capabilities of the Python package MNE-Python.')
 
 # Montreal
-c1 <- c('Visiting Researcher', 
-        'McConnell Brain Imaging Centre, Montreal Neurological Institute',
+c1 <- c('McConnell Brain Imaging Centre, Montreal Neurological Institute',
+        'Visiting Researcher', 
         'Montreal (Canada)',
         'January 2016',
         'April 2016',
-        'Multivariate analysis of large clinical data sets.')
+        'Multivariate analysis of large clinical data sets (e.g., HCP).')
 
 # Research in Marburg
-d1 <- c('Research and Teaching Assistant', 
-       'Philipps-Universität Marburg',
-       'Marburg (Germany)',
-       'October 2014',
-       'September 2019',
-       'Plan, conduct, and evaluate psychological / neuroscientific experiments.')
-d2 <- c('Research and Teaching Assistant', 
-       'Philipps-Universität Marburg',
-       'Marburg (Germany)',
-       'October 2014',
-       'September 2019',
-       'Design study protocols, develop methods to assess compliance and behavioral performnace.')
-d3 <- c('Research and Teaching Assistant', 
-        'Philipps-Universität Marburg',
+d1 <- c('Philipps-Universität Marburg',
+        'Research and Teaching Assistant', 
         'Marburg (Germany)',
         'October 2014',
         'September 2019',
-        'Programming of human-computer interfaces, real-time experimental control.')
-d4 <- c('Research and Teaching Assistant', 
-        'Philipps-Universität Marburg',
+        'Plan, conduct, and evaluate psychological / neuroscientific experiments (e.g., using EEG).')
+d2 <- c('Philipps-Universität Marburg',
+        'Research and Teaching Assistant',
+        'Marburg (Germany)',
+        'October 2014',
+        'September 2019',
+        'Design study protocols, develop methods to assess compliance and behavioral performnace.')
+d3 <- c('Philipps-Universität Marburg',
+        'Research and Teaching Assistant', 
+        'Marburg (Germany)',
+        'October 2014',
+        'September 2019',
+        'Programming of experiment interfaces, real-time experimental control.')
+d4 <- c('Philipps-Universität Marburg',
+        'Research and Teaching Assistant', 
         'Marburg (Germany)',
         'October 2014',
         'September 2019',
@@ -72,15 +72,15 @@ write.table(experience, file = './data/experience.tsv', sep = '\t', row.names = 
 
 
 # --- 2) create education .tsv
-ed1 <- c('Dr. rer. nat. (PhD) in Psychology', 
-         'Philipps-Universität Marburg',
+ed1 <- c('Philipps-Universität Marburg',
+        'Dr. rer. nat. (PhD) in Psychology', 
          'Marburg (Germany)',
          'Jan 2015',
          'Present',
          'Doctoral Thesis: The electrophysiology of individual differences in 
          executive-dependent descision making.')
-ed2 <- c('German Diplom in Psychology (M.Sc. equivalent)', 
-         'Philipps-Universität Marburg',
+ed2 <- c('Philipps-Universität Marburg',
+         'German Diplom in Psychology (M.Sc. equivalent)', 
          'Marburg (Germany)',
          'October 2008',
          'September 2014',
@@ -92,20 +92,20 @@ write.table(education, file = './data/education.tsv', sep = '\t', row.names = F)
 
 
 # --- 3) create clinical .tsv
-cl1 <- c('Scientist-Practicioner', 
-         'Child and Adolescent Psychology, Philipps-Universität Marburg',
+cl1 <- c('Child and Adolescent Psychology, Philipps-Universität Marburg',
+         'Scientist-Practicioner (Marburg Model)', 
          'Marburg (Germany)',
          'October 2019',
          'Present',
          'Carry out diagnostics and intervetions within clinical reserach projects.')
-cl2 <- c('Clinical Research Intern', 
-         'Dep. of Psychotherapy, Schön Klinik',
+cl2 <- c('Dep. of Psychotherapy, Schön Klinik',
+         'Clinical Research Intern', 
          'Bad Arolsen (Germany)',
          'May 2014',
          'September 2014',
          'Database and project management.')
-cl3 <- c('Clinical Intern', 
-         'Dep. of Psychiatry and Psychotherapy, Charité Universitätsmedizin',
+cl3 <- c('Dep. of Psychiatry and Psychotherapy, Charité Universitätsmedizin',
+         'Clinical Intern', 
          'Berlin (Germany)',
          'September 2013',
          'Dezember 2013',
@@ -125,7 +125,7 @@ pr1 <- c('Programming', 'Python (advanced)')
 pr2 <- c('Programming', 'R (advanced)')
 pr3 <- c('Programming', 'Git (advanced)')
 pr4 <- c('Programming', 'MATLAB (advanced)')
-pr5 <- c('Programming', 'SQL')
+pr5 <- c('Programming', 'SQL (intermidiate)')
 
 pk1 <- c('Packages', 'NumPy')
 pk2 <- c('Packages', 'Pandas')
