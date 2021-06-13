@@ -97,7 +97,7 @@ cl1 <- c('Child and Adolescent Psychology, Philipps-Universität Marburg',
          'Marburg (Germany)',
          'October 2019',
          'Present',
-         'Carry out diagnostics and intervetions within clinical reserach projects.')
+         'Carry out diagnostics and interventions within clinical research projects.')
 cl2 <- c('Dep. of Psychotherapy, Schön Klinik',
          'Clinical Research Intern', 
          'Bad Arolsen (Germany)',
@@ -125,7 +125,7 @@ pr1 <- c('Programming', 'Python (advanced)')
 pr2 <- c('Programming', 'R (advanced)')
 pr3 <- c('Programming', 'Git (advanced)')
 pr4 <- c('Programming', 'MATLAB (advanced)')
-pr5 <- c('Programming', 'SQL (intermidiate)')
+pr5 <- c('Programming', 'SQL (intermediate)')
 
 pk1 <- c('Packages', 'NumPy')
 pk2 <- c('Packages', 'Pandas')

@@ -3,12 +3,12 @@ name: José C.
 surname: García Alanis
 position: "PhD Candidate | Psycholgist | Data Analyst | Scientific Software Developer"
 # address: "Department of Psychology, Philipps-University of Marburg"
-# profilepic: "./img/me.jpeg"
+profilepic: "./img/me.jpeg"
 email: "alanis.jcg@gmail.com"
 # twitter: JoiAlhaniz
 github: JoseAlanis
 linkedin: jcgalanis
-aboutme: "Hi! I'm a experimental and clinical psychologist at the Philipps-Universität Marburg. My work lies at the interface between science and clinical practice, bridging basic research with the application of clincal interventions in the field. My research interests are focused on personal and situational influences on human brain function in relation to goal-directed behavior. I have a background in statistical modelling and scientific software development using **Python** (e.g., NumPy, Pandas, SciPy, scikit-learn), **R**, and **Git**.  I'm also an active member of the open source community and an advocate of open, reproducible, and robust scientific practices."
+aboutme: "Hi! I'm an experimental and clinical psychologist at the University of Marburg. My work lies at the interface between science and clinical practice, bridging basic research with the application of clincal interventions in the field. My research interests are focused on personal and situational influences on human brain function in relation to goal-directed behaviour. I have a background in statistical modelling and scientific software development using **Python** (e.g., NumPy, Pandas, SciPy, scikit-learn), **R**, and **Git**.  I'm also an active member of the open source community and an advocate of open, reproducible, and robust scientific practices."
 date: "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
@@ -138,7 +138,7 @@ tribble(
   "Oct. 2015",
 
   "DAAD-STIBET",
-  "Degree Completion Grant (Philipps-Universität Marburg)",
+  "Degree Completion Grant, Philipps-Universität Marburg.",
   "Jun. 2013",
   
  "DAAD-STIBET",
